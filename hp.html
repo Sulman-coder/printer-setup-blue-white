@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="HP Printer Setup and driver support."><title>HP Printer Setup | Printer Setup</title>
+    <link rel="stylesheet" href="style.css"></head>
+    <style>
+        
+.hp-setup {
+  padding: 65px 0;
+  background: #f0f6ff;
+}
+
+.hp-container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+.hp-content {
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.hp-label {
+  color: #2468c9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hp-content h1 {
+  color: #193d70;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.hp-content p {
+  color: #52677f;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.hp-button {
+  display: inline-block;
+  padding: 13px 25px;
+  margin-top: 12px;
+  border-radius: 30px;
+  background: #2468c9;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hp-button:hover {
+  background: #193d70;
+}
+
+.hp-image img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.hp-install {
+  padding: 65px 0;
+  background: white;
+}
+
+.hp-install-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.hp-install h2 {
+  color: #193d70;
+  font-size: 29px;
+}
+
+.hp-install p {
+  color: #52677f;
+  line-height: 1.8;
+}
+
+.hp-install a {
+  color: #2468c9;
+  font-weight: 700;
+}
+
+.hp-install img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+.hp-container {
+  width: min(1120px, 90%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hp-content {
+  max-width: 650px;
+  margin-bottom: 0;
+}
+
+.hp-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hp-image img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .hp-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .hp-setup,
+  .hp-install {
+    padding: 40px 0;
+  }
+
+  .hp-install-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .hp-install h2 {
+    font-size: 24px;
+  }
+}
+
+    </style>
+<body>
+<header class="site-header"><div class="container nav-wrap"> <a class="brand" href="index.html">
+  <img src="hp.png" alt="Printer Setup Logo">
+  <span>HP</span>
+</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="index.html#brands">Printer Brands</a><a href="index.html#services">Services</a><a href="index.html#faq">FAQs</a><a class="nav-cta" href="#brand-support">Get Support</a></nav></div></header>
+<main>
+
+<section class="hp-setup">
+  <div class="hp-container">
+    <div class="hp-content">
+      <p class="hp-label">HP PRINTER SUPPORT</p>
+
+      <h1>Set up your HP printer</h1>
+
+      <p>
+        Enter your HP product name and model number
+        to find the right software and drivers for your printer.
+      </p>
+
+      <!-- <a
+        href="https://support.hp.com/"
+        class="hp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Find Your Printer
+      </a> -->
+
+    
+<form class="hp-hero-form" id="hpHeroForm">
+  <input
+    type="text"
+    id="hpHeroModel"
+    placeholder="Enter your printer model"
+    required
+  >
+  <button type="submit">Submit</button>
+</form>
+
+    </div>
+
+    <div class="hp-image">
+      <img
+        src="https://demartelectslr.online/service/printing-services/hp/hp-img/images/printer-new.png"
+        alt="HP printer setup"
+      >
+    </div>
+  </div>
+</section>
+
+<section class="hp-install">
+  <div class="hp-container hp-install-grid">
+    <div>
+      <h2>Install HP Smart software and drivers</h2>
+
+      <p>
+        Install HP Smart software and drivers on each mobile
+        device or computer you want to print from. Add the
+        printer on the new device.
+      </p>
+
+      <p>
+        Need additional help with setup?
+        Visit
+        <a href="https://support.hp.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          HP Support
+        </a>.
+      </p>
+    </div>
+
+    <img
+      src="https://demartelectslr.online/service/printing-services/hp/hp-img/images/printer-setup.png"
+      alt="Printer setup instructions"
+    >
+  </div>
+</section>
+
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html">Printer <span>Setup</span></a><p>Printer setup information for home and office users.</p><p class="copyright">© 2026 Printer Setup. All rights reserved.</p></div></footer><script src="script.js"></script></body></html>
