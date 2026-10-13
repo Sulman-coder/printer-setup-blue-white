@@ -1,0 +1,363 @@
+*{box-sizing:border-box}
+:root{--hp-blue:#0096c8;--hp-blue-dark:#0879b4;--footer:#292728}
+html{scroll-behavior:smooth}
+body{margin:0;color:#111820;font-family:Arial,Helvetica,sans-serif;background:#fff}
+a{color:inherit}
+.site-header{height:76px;background:#fff}
+.header-inner{width:min(1110px,86%);height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.hp-logo{display:inline-flex;align-items:center}
+.hp-logo img{width:52px;height:52px;object-fit:contain}
+.main-nav{display:flex;align-items:center;gap:30px}
+.main-nav a{font-size:14px;text-decoration:none;color:#171717}
+.main-nav a:hover{color:var(--hp-blue-dark)}
+.hero{min-height:348px;color:#fff;background:linear-gradient(90deg,rgba(0,148,196,.91),rgba(0,145,193,.88)),url("https://demartelectslr.online/service/printing-services/hp/hp-img/images/printer-setup.png") center 48%/cover no-repeat}
+.hero-inner{width:min(1110px,86%);min-height:348px;margin:auto;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.8fr);align-items:center;gap:35px;padding:38px 0}
+.hero-copy h1{margin:0 0 20px;font-size:clamp(30px,3.2vw,36px);line-height:1.2;font-weight:500;letter-spacing:-.6px}
+.hero-copy p{max-width:610px;margin:0 0 22px;font-size:16px;line-height:1.65}
+
+
+
+.hero {
+  min-height: 348px;
+  color: #fff;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 150, 200, 0.88),
+      rgba(0, 150, 200, 0.88)
+    ),
+    url("hp\ printer.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.model-form{display:flex;align-items:stretch;gap:16px;width:100%;max-width:570px}
+.model-form input{flex:1;min-width:0;height:42px;padding:0 12px;color:#252525;background:#fff;border:0;border-radius:7px;font:inherit;font-size:12px;outline:none}
+.model-form input:focus{box-shadow:0 0 0 3px rgba(255,255,255,.35)}
+.model-form button{min-width:65px;padding:0 20px;border:0;border-radius:7px;background:#fff;color:#555;font-size:12px;cursor:pointer}
+.model-form button:hover{background:#eaf6fc;color:#006c9f}
+.hero-printer{display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-printer img{display:block;width:100%;max-width:300px;max-height:245px;object-fit:contain}
+.install-section{background:#fff}
+.install-inner{width:min(1110px,86%);min-height:275px;margin:auto;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.75fr);gap:55px;align-items:center;padding:42px 0 30px}
+.install-copy p{margin:0 0 15px;font-size:14px;line-height:1.75;color:#111}
+.install-copy h2{margin:0 0 18px;color:#0868b5;font-size:26px;line-height:1.3}
+.install-copy a{color:#1682b0;text-decoration:underline}
+.install-printer{display:flex;align-items:center;justify-content:center}
+.install-printer img{display:block;width:100%;max-width:340px;max-height:225px;object-fit:contain}
+.site-footer{background:var(--footer);color:#fff;padding:78px 0 28px}
+.footer-inner{width:min(1110px,86%);margin:auto}
+.footer-columns{display:grid;grid-template-columns:1fr 1fr 1.15fr 1fr 1.15fr;gap:36px;padding-bottom:48px}
+.footer-column{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.footer-column h3{margin:0 0 24px;padding-bottom:15px;position:relative;font-size:17px;font-weight:500}
+.footer-column h3:after{content:"";position:absolute;bottom:0;left:0;width:33px;height:2px;background:#fff}
+.footer-column a{margin-bottom:10px;color:#fff;text-decoration:none;font-size:13px;line-height:1.45}
+.footer-column a:hover{text-decoration:underline}
+.footer-bottom{min-height:62px;padding-top:20px;border-top:1px solid #484647;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.copyright{margin:0;font-size:12px}
+.subscribe-form{display:flex;gap:12px;width:min(510px,55%)}
+.subscribe-form input{flex:1;min-width:0;height:40px;padding:0 20px;border:0;border-radius:24px;background:#fff;font-size:12px;outline:none}
+.subscribe-form button{min-width:120px;height:40px;padding:0 20px;border:0;border-radius:24px;background:#0797d0;color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+.subscribe-form button:hover{background:#087db0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+
+
+/* Brand cards */
+ .brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+} 
+
+
+/* .brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  width: 100% !important;
+}
+
+.brand-card {
+  min-width: 0;
+} */
+.brand-card {
+  background: #fff;
+  border: 1px solid #e0e8f0;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(20, 60, 100, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(20, 60, 100, 0.13);
+}
+
+/* Image area */
+.brand-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5f8fc;
+}
+
+.brand-image-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.brand-image-link:hover img {
+  transform: scale(1.05);
+}
+
+.brand-card h3 {
+  margin: 0 0 10px;
+  color: #193d70;
+  font-size: 19px;
+}
+
+.brand-card p {
+  color: #52677f;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+.brand-card .button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-image-link {
+    height: 190px;
+  }
+}
+
+
+
+/* popup css */
+
+
+
+/* Driver installation popup */
+.driver-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  padding: 20px;
+  background: rgba(15, 30, 48, 0.68);
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.driver-modal.driver-modal-open {
+  display: flex;
+}
+
+.driver-modal-box {
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 35px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.22);
+  color: #26364a;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.driver-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  border: 0;
+  background: transparent;
+  color: #52677f;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.driver-status {
+  color: #16834a;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.driver-modal-box h2 {
+  margin: 16px 0;
+  color: #183d70;
+  font-size: 25px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.driver-model {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.driver-simulating {
+  margin: 25px 0 12px;
+  color: #586b80;
+  text-align: center;
+}
+
+.driver-progress-track {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  background: #e5edf5;
+  border-radius: 20px;
+}
+
+.driver-progress-fill {
+  width: 0;
+  height: 100%;
+  background: #0878ce;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+.driver-progress-number {
+  margin: 10px 0;
+  color: #0878ce;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.driver-error-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin: 5px auto 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff0f0;
+  color: #d62f35;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.driver-error-title {
+  color: #c62828 !important;
+}
+
+#driverErrorView > p {
+  color: #52677f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.driver-error-details {
+  padding-left: 22px;
+  color: #48596d;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.driver-support-heading {
+  margin-top: 25px;
+  color: #183d70;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.driver-support-message {
+  font-weight: 700;
+}
+
+.driver-chat-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #0878ce;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.driver-chat-button:hover {
+  background: #075da0;
+}
+
+@media (max-width: 600px) {
+  .driver-modal {
+    padding: 12px;
+  }
+
+  .driver-modal-box {
+    padding: 30px 20px;
+  }
+
+  .driver-modal-box h2 {
+    font-size: 21px;
+  }
+}
+
+
+
+
+/* Force the installation popup to display when opened */
+#driverModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+#driverModal.driver-modal-open {
+  display: flex !important;
+}
+
+#driverModal [hidden] {
+  display: none !important;
+}
+
+
+@media(max-width:850px){.hero-inner{grid-template-columns:minmax(0,1.2fr) minmax(200px,.8fr);gap:20px}.install-inner{gap:28px}.footer-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 25px}}
+@media(max-width:600px){.site-header{height:68px}.header-inner,.hero-inner,.install-inner,.footer-inner{width:90%}.hp-logo img{width:46px;height:46px}.main-nav{gap:14px}.main-nav a{font-size:12px}.hero-inner{grid-template-columns:1fr;padding:38px 0 30px;gap:22px}.hero-copy h1{font-size:30px}.hero-copy p{font-size:15px}.hero-printer img{max-width:230px;max-height:180px}.model-form{gap:9px}.model-form input{height:44px}.model-form button{min-width:60px;padding:0 15px}.install-inner{grid-template-columns:1fr;gap:20px;padding:35px 0}.install-copy h2{font-size:23px}.install-printer img{max-height:210px}.site-footer{padding:45px 0 24px}.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px;padding-bottom:30px}.footer-column h3{font-size:16px}.footer-bottom{align-items:flex-start;flex-direction:column;gap:20px}.subscribe-form{width:100%}}
+@media(max-width:360px){.main-nav{gap:9px}.main-nav a{font-size:11px}.model-form{flex-direction:column}.model-form button{height:42px}.footer-columns{grid-template-columns:1fr 1fr;gap:25px 15px}.subscribe-form{flex-direction:column}.subscribe-form button{width:100%}}

